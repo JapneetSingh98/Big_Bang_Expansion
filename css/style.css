@@ -4,6 +4,10 @@ html, body {
     color: white;
 }
 
+h3, p {
+    margin: 0;
+}
+
 .star {
     height: 5px;
     width: 5px;
