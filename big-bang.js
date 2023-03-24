@@ -1,5 +1,6 @@
 const body = $("body")[0];
 const expansionRate = 0.05;
+const numStars = 300;
 
 function drawStar() {
 
@@ -33,8 +34,6 @@ function drawStarsExpanded() {
         body.appendChild(starExpanded);
     }
 };
-
-let numStars = 200;
 
 drawNStars(numStars);
 drawStarsExpanded();
