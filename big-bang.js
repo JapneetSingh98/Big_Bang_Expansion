@@ -45,7 +45,7 @@ document.addEventListener("mousemove", function(e) {
     let deltaX = (e.clientX) * (0-expansionRate);
     let deltaY = (e.clientY) * (0-expansionRate);
 
-    for (let i = 0; i < expandedStars.length; i++) {
+    for (let i = 0; i <= expandedStars.length; i++) {
         let curStar = stars[i];
         let curExpanded = expandedStars[i];
 
