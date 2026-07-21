@@ -39,5 +39,16 @@ drawNStars(numStars);
 drawStarsExpanded();
 
 document.addEventListener("mousemove", function(e) {
-    drawStarsExpanded();
+    let deltaX = e.clientX * expansionRate;
+    let deltaY = e.clientY * expansionRate;
+    let stars = $(".star");
+    let starsExpanded = $(".star-expanded");
+
+    for (let i = 0; i < starsExpanded.length; i++) {
+        let curStar = stars[i];
+        let curExpanded = starsExpanded[i];
+
+        curExpanded.style.left = ((curStar.offsetLeft * (1+expansionRate)) + deltaX) + "px";
+        curExpanded.style.top = ((curStar.offsetTop * (1+expansionRate)) + deltaY) + "px";
+    }
 });
