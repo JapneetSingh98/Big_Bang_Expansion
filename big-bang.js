@@ -23,7 +23,7 @@ function drawNStars(n) {
 
 function drawStarsExpanded() {
     let stars = $(".star");
-    for (let i = 0; i <= stars.length; i++) {
+    for (let i = 0; i < stars.length; i++) {
         let curStar = stars[i];
 
         const starExpanded = document.createElement("span");
