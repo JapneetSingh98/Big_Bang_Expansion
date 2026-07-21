@@ -23,7 +23,7 @@ function drawNStars(n) {
 
 function drawStarsExpanded() {
     let stars = $(".star");
-    for (let i = 0; i < stars.length; i++) {
+    for (let i = 0; i <= stars.length; i++) {
         let curStar = stars[i];
 
         const starExpanded = document.createElement("span");
@@ -39,8 +39,8 @@ drawNStars(numStars);
 drawStarsExpanded();
 
 document.addEventListener("mousemove", function(e) {
-    let deltaX = (e.clientX) * (0-expansionRate);
-    let deltaY = (e.clientY) * (0-expansionRate);
+    let deltaX = (e.clientX) * (expansionRate);
+    let deltaY = (e.clientY) * (expansionRate);
 
     for (let i = 0; i < $(".star-expanded").length; i++) {
         let curStar = $(".star")[i];
