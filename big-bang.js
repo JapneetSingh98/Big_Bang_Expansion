@@ -1,6 +1,6 @@
 const body = $("body")[0];
 const expansionRate = 0.05;
-const numStars = 300;
+const numStars = 150;
 
 function drawStar() {
 
